@@ -1,0 +1,39 @@
+.canvas {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 30vw;
+  height: 30vh;
+  pointer-events: none;
+  object-fit: contain;
+  z-index: 0;
+}
+
+/* Responsive reductions for smaller screens */
+@media (max-width: 1200px) {
+  .canvas {
+    width: 440px;
+    height: 440px;
+    top: 40px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .canvas {
+    width: 320px;
+    height: 320px;
+    top: 28px;
+    right: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .canvas {
+    /* keep it smaller and offset for mobile */
+    width: 220px;
+    height: 220px;
+    top: 18px;
+    right: 18px;
+  }
+}
