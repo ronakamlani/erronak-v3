@@ -4,11 +4,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>undefined/contact/</loc>
+    <loc>undefined/articles/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>undefined/articles/</loc>
+    <loc>undefined/contact/</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -27,12 +27,5 @@
     <loc>undefined/projects/volkihar-knight/</loc>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>undefined/articles/hello-world</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>undefined/articles/modern-styling-in-react</loc>
-    <changefreq>monthly</changefreq>
-  </url>
+
 </urlset>

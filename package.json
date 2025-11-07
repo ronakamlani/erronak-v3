@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://hamishw.com",
+  "homepage": "https://www.erronak.com",
   "description": "Senior MERN Stack Engineer & Full-Stack Architect — React, Node.js, Cloud-native SaaS",
   "repository": "https://github.com/ronakamlani/erronak-v3",
-  "author": "Ronak Amlani <hello@hamishw.com>",
+  "author": "Ronak Amlani <info@erronak.com>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@storybook/addon-a11y": "^6.5.10",
@@ -43,6 +43,7 @@
     "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-toastify": "^11.0.5",
     "three": "^0.146.0",
     "three-stdlib": "^2.18.1"
   },

@@ -3,75 +3,36 @@ import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Footer } from 'components/Footer';
 import { Heading } from 'components/Heading';
-import { Icon } from 'components/Icon';
 import { Input } from 'components/Input';
+import { ToastContainer, toast } from 'react-toastify';
 import { Meta } from 'components/Meta';
 import { Section } from 'components/Section';
-import { Text } from 'components/Text';
 import { tokens } from 'components/ThemeProvider/theme';
 import { Transition } from 'components/Transition';
-import { useFormInput } from 'hooks';
-import { useRef, useState } from 'react';
 import { cssProps, msToNum, numToMs } from 'utils/style';
 import styles from './Contact.module.css';
 
+const MY_EMAIL = "info@erronak.com";
+
 export const Contact = () => {
-  const errorRef = useRef();
-  const email = useFormInput('');
-  const message = useFormInput('');
-  const [sending, setSending] = useState(false);
-  const [complete, setComplete] = useState(false);
-  const [statusError, setStatusError] = useState('');
   const initDelay = tokens.base.durationS;
-
-  const onSubmit = async event => {
-    event.preventDefault();
-    setStatusError('');
-
-    if (sending) return;
-
-    try {
-      setSending(true);
-
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: email.value,
-          message: message.value,
-        }),
-      });
-
-      const responseMessage = await response.json();
-
-      const statusError = getStatusError({
-        status: response?.status,
-        errorMessage: responseMessage?.error,
-        fallback: 'There was a problem sending your message',
-      });
-
-      if (statusError) throw new Error(statusError);
-
-      setComplete(true);
-      setSending(false);
-    } catch (error) {
-      setSending(false);
-      setStatusError(error.message);
-    }
+  const doCopyEmail = () => {
+    navigator.clipboard.writeText(MY_EMAIL).then(() => {
+      toast.success(`copied: ${MY_EMAIL}`);
+    }).catch((err) => {
+      toast.error(`Failed! ping me here please: ${MY_EMAIL}`);
+    });
   };
-
+  
   return (
     <Section className={styles.contact}>
       <Meta
         title="Contact"
         description="Send me a message if you’re interested in discussing a project or if you just want to say hi"
       />
-      <Transition unmount in={!complete} timeout={1600}>
+      <Transition unmount in={true} timeout={1600}>
         {(visible, status) => (
-          <form className={styles.form} method="post" onSubmit={onSubmit}>
+          <form className={styles.form} method="post" onSubmit={undefined}>
             <Heading
               className={styles.title}
               data-status={status}
@@ -88,95 +49,40 @@ export const Contact = () => {
             />
             <Input
               required
+              disabled={true}
               className={styles.input}
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay)}
-              autoComplete="email"
-              label="Your Email"
+              value={"info@erronak.com"}
+              label="Ping me at"
               type="email"
               maxLength={512}
-              {...email}
+              readOnly={true}
+              ref={(input) => {
+                if (input) {
+                  input.select(); // auto-selects the text inside input when rendered
+                }
+              }}
             />
-            <Input
-              required
-              multiline
-              className={styles.input}
-              data-status={status}
-              style={getDelay(tokens.base.durationS, initDelay)}
-              autoComplete="off"
-              label="Message"
-              maxLength={4096}
-              {...message}
-            />
-            <Transition in={statusError} timeout={msToNum(tokens.base.durationM)}>
-              {errorStatus => (
-                <div
-                  className={styles.formError}
-                  data-status={errorStatus}
-                  style={cssProps({
-                    height: errorStatus ? errorRef.current?.offsetHeight : 0,
-                  })}
-                >
-                  <div className={styles.formErrorContent} ref={errorRef}>
-                    <div className={styles.formErrorMessage}>
-                      <Icon className={styles.formErrorIcon} icon="error" />
-                      {statusError}
-                    </div>
-                  </div>
-                </div>
-              )}
-            </Transition>
-            <Button
+          <Button
               className={styles.button}
-              data-status={status}
-              data-sending={sending}
               style={getDelay(tokens.base.durationM, initDelay)}
-              disabled={sending}
-              loading={sending}
+              data-status={status}
+              disabled={false}
+              loading={false}
               loadingText="Sending..."
               icon="send"
-              type="submit"
-            >
-              Send message
+              type="button"
+              onClick={doCopyEmail}
+            > 
+              {`Copy ${MY_EMAIL}`}
             </Button>
-          </form>
-        )}
-      </Transition>
-      <Transition unmount in={complete}>
-        {(visible, status) => (
-          <div className={styles.complete} aria-live="polite">
-            <Heading
-              level={3}
-              as="h3"
-              className={styles.completeTitle}
-              data-status={status}
-            >
-              Message Sent
-            </Heading>
-            <Text
-              size="l"
-              as="p"
-              className={styles.completeText}
-              data-status={status}
-              style={getDelay(tokens.base.durationXS)}
-            >
-              I’ll get back to you within a couple days, sit tight
-            </Text>
-            <Button
-              secondary
-              iconHoverShift
-              className={styles.completeButton}
-              data-status={status}
-              style={getDelay(tokens.base.durationM)}
-              href="/"
-              icon="chevronRight"
-            >
-              Back to homepage
-            </Button>
-          </div>
-        )}
-      </Transition>
+        </form>)}
+        </Transition>
       <Footer className={styles.footer} />
+      <ToastContainer 
+        theme='dark'
+      />
     </Section>
   );
 };

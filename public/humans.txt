@@ -8,8 +8,6 @@ and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
-
 Ronak Amlani
 Senior MERN Stack Engineer & Full-Stack Architect
 
@@ -35,7 +33,7 @@ Framer Motion
 
 _______________________________________________________________________________
 
-FONTS | フォント
+FONTS |
 
 Gotham
 Hiragino Kaku Gothic

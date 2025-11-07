@@ -1,6 +1,6 @@
 # Personal portfolio
 
-[![Site preview](/public/site-preview.png)](https://hamishw.com)
+[![Site preview](/public/social-image.png)](https://www.erronak.com)
 
 This portfolio showcases engineering and product work from Ronak Amlani — a Senior MERN Stack Engineer and Full-Stack Architect. Projects include scalable web and SaaS platforms, interactive frontend experiences, and cloud-native infrastructure. Built with [Next.js](https://nextjs.org/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/).
 

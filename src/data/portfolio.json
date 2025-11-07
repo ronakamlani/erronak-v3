@@ -1,0 +1,656 @@
+[
+  {
+    "id": 11,
+    "index": 1,
+    "slug": "dating-app",
+    "category": "Design & Web Development",
+    "title": "Online Dating web app.",
+    "description": "Online dating app where user can search their match partner using desire filters like I am interested in gender, age, and location. Also, they can like and chat with each other.",
+    "youtube_link": "https://www.youtube.com/watch?v=5zj32NydK1k",
+    "youtube_id": "5zj32NydK1k",
+    "feature":"true",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/dating-app/ultracupid_mockup.png",
+        "caption": "Ultracuid Dating app Home page.",
+        "description": "Ultracuid Dating app Home page."
+      },
+      {
+        "image": "https://techacorn.com/work/dating-app/dating-app3.png",
+        "caption": "Talk with each others.",
+        "description": "Customer can talk with each others using the chat feature."
+      },
+      {
+        "image": "https://techacorn.com/work/dating-app/dating-app1.png",
+        "caption": "Find your match",
+        "description": "Customers can find their partner by age, gender interest and location filters."
+      },
+      {
+        "image": "https://techacorn.com/work/dating-app/dating-app2.png",
+        "caption": "Send a like request.",
+        "description": "Customer can like others profile and they can see their liked profile, other liked the customer profile and mutual like profiles."
+      },
+      {
+        "image": "https://techacorn.com/work/dating-app/dating-app4.png",
+        "caption": "Freemium plan",
+        "description": "Customer can send maximum 5 messages daily for the free, if customer want to send a new message they have to purcahse a subscription plan."
+      }
+    ],
+    "technologies": [
+      "jQuery",
+      "Node.js",
+      "Express js",
+      "MongoDB",
+      "Bootstrap admin panel with jQuery"
+    ],
+    "links": [
+      {
+        "title": "Launch web access",
+        "link": "https://portfolio2.techacorn.com/"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "web_apps"
+    ]
+  },
+  {
+    "id": 6,
+    "index": 7,
+    "slug": "ventpack-for-anonymous-user-to-post-and-get-resolve-from-personal-problems",
+    "category": "Design & Web Development",
+    "title": "VentPack for anonymous user to post and get resolve from personal problems.",
+    "description": "VentPack is the way to send your personal problem post anonymously, other people comment, like, share, bookmark on your post, if they both become friend, both can message and much more..",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/VentPack/ventoapp_main.png",
+        "caption": "Ventpack, anonymous user to post about your problem, to get it solve."
+      },
+      {
+        "image": "https://techacorn.com/work/VentPack/1.jpg",
+        "caption": "Register."
+      },
+      {
+        "image": "https://techacorn.com/work/VentPack/2.jpg",
+        "caption": "Choose your interest."
+      },
+      {
+        "image": "https://techacorn.com/work/VentPack/3.jpg",
+        "caption": "Access and read anonymous post, like, comment, share, bookmark."
+      },
+      {
+        "image": "https://techacorn.com/work/VentPack/5.jpg",
+        "caption": "Post types of post."
+      }
+    ],
+    "technologies": [
+      "React Native (Mobile App ANDROID and IOS both)",
+      "Node.js",
+      "Express js",
+      "MongoDB",
+      "Bootstrap admin panel with jQuery"
+    ],
+    "links": [
+      {
+        "title": "Launch Android app",
+        "link": "https://play.google.com/store/apps/details?id=com.ventoapp&hl=en_IN"
+      },
+      {
+        "title": "Launch IOS app",
+        "link": "https://apps.apple.com/in/app/ventpack/id1441961541"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "mobile_apps"
+    ]
+  },
+  {
+    "id": 7,
+    "index": 8,
+    "slug": "allupick-ecommerce-website-to-find-the-product-with-nearest-store-payment-and-invetory-management",
+    "category": "Design & Web Development",
+    "title": "Allupick, ECommerce website, to find the product with nearest store, payment and invetory management.",
+    "description": "Allupick, ecommerce website to find nearest shop order items, payment, partner panel to handle orders(TODOS), assign the order to the seller, mange products, shops inventory and much more..",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/allupick/master.jpg",
+        "caption": "Allupick, ECommerce website, to find the product with nearest store, payment and invetory management"
+      },
+      {
+        "image": "https://techacorn.com/work/allupick/customer/1.png",
+        "caption": "Customer, search product."
+      },
+      {
+        "image": "https://techacorn.com/work/allupick/customer/2.png",
+        "caption": "Shop detail page and add to cart ."
+      },
+      {
+        "image": "https://techacorn.com/work/allupick/customer/3.png",
+        "caption": "Add payment and done."
+      },
+      {
+        "image": "https://techacorn.com/work/allupick/1.png",
+        "caption": "partner, add no of shops."
+      },
+      {
+        "image": "https://techacorn.com/work/allupick/2.png",
+        "caption": "Partner, Add shop items."
+      },
+      {
+        "image": "https://techacorn.com/work/allupick/3.png",
+        "caption": "Partner, manage stocks add/update/delete."
+      },
+      {
+        "image": "https://techacorn.com/work/allupick/4.png",
+        "caption": "Partner, Full on stock history management and balance sheet."
+      },
+      {
+        "image": "https://techacorn.com/work/allupick/5.png",
+        "caption": "Partner, order management, and track the order."
+      },
+      {
+        "image": "https://techacorn.com/work/allupick/6.png",
+        "caption": "Partner, assign the order to selles team."
+      }
+    ],
+    "technologies": [
+      "React js (Customer,partner and seller panel)",
+      "Node.js",
+      "Express js",
+      "MongoDB"
+    ],
+    "links": [
+      {
+        "title": "Launch Allupick",
+        "link": "https://www.allupick.com/"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "web_apps"
+    ]
+  },
+  {
+    "id": 8,
+    "index": 3,
+    "slug": "gogetgone-track-your-tour-and-share-your-journey",
+    "category": "Design & Mobile Development",
+    "title": "Gogetgone, Track your tour and share your journey.",
+    "description": "Gogetgone, capture your visited place with text, image, video and audio, share your journey with your friends, family and much more..<br>",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/gogetgonetoday/FaveJourney.png",
+        "caption": "Gogetgone, track your tour and share your journey."
+      },
+      {
+        "image": "https://techacorn.com/work/gogetgonetoday/1.jpg",
+        "caption": "Home page, with display location with memories."
+      },
+      {
+        "image": "https://techacorn.com/work/gogetgonetoday/2.jpg",
+        "caption": "Share you journey."
+      },
+      {
+        "image": "https://techacorn.com/work/gogetgonetoday/3.jpg",
+        "caption": "Create individual trip, we call it history."
+      },
+      {
+        "image": "https://techacorn.com/work/gogetgonetoday/4.jpg",
+        "caption": "Replay, the journey."
+      },
+      {
+        "image": "https://techacorn.com/work/gogetgonetoday/5.jpg",
+        "caption": "Edit your profile."
+      }
+    ],
+    "technologies": [
+      "React Native (For both ANDROID and IOS)",
+      "Node.js",
+      "Express js",
+      "MongoDB"
+    ],
+    "links": [
+      {
+        "title": "The app is under Review mode",
+        "link": "#"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "mobile_apps"
+    ]
+  },
+  {
+    "id": 9,
+    "index": 4,
+    "slug": "kissansathi-the-online-action-mobile-app",
+    "category": "Design & Mobile Development",
+    "title": "kissansathi the farmer product seller e-commerce app",
+    "description": "Kissansathi is a farmer products e-commerce app where farmers can see the price and order products, vendors can set the product price and handle the order using an admin panel",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/kissansathi/master.jpg",
+        "caption": "Kissansathi "
+      },
+      {
+        "image": "https://techacorn.com/work/kissansathi/1.jpg",
+        "caption": "Farmer can explore products by category search or even in native language"
+      },
+      {
+        "image": "https://techacorn.com/work/kissansathi/2.jpg",
+        "caption": "Farmer can generate inquiry and handle order matter offline."
+      },
+      {
+        "image": "https://techacorn.com/work/kissansathi/3.jpg",
+        "caption": "Farmer can search the product what they need by filter"
+      }
+    ],
+    "technologies": [
+      "React Native (For both ANDROID and IOS)",
+      "Node.js",
+      "Express js",
+      "MongoDB",
+      "Bootstrap admin panel"
+    ],
+    "links": [
+      {
+        "title": "Launch Kissansathi",
+        "link": "https://play.google.com/store/apps/details?id=com.kissansathi&hl=en_IN"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "mobile_apps"
+    ]
+  },
+  {
+    "id": 10,
+    "index": 11,
+    "slug": "i-walk-indonesia-a-tour-guide-booking-app",
+    "category": "Design & Mobile Development",
+    "title": "I walk Indonesia, a tour guide booking app",
+    "description": "The tour guider can create their account and publish their services and tourists can book and pay via escrow service",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/iwalk_indonesia/master.png",
+        "caption": "IWalk Indonesia, a tour guide booking app."
+      },
+      {
+        "image": "https://techacorn.com/work/iwalk_indonesia/1.jpg",
+        "caption": "Landing screen."
+      },
+      {
+        "image": "https://techacorn.com/work/iwalk_indonesia/2.jpg",
+        "caption": "Explore Tour packages."
+      },
+      {
+        "image": "https://techacorn.com/work/iwalk_indonesia/3.jpg",
+        "caption": "Tour Detail page."
+      },
+      {
+        "image": "https://techacorn.com/work/iwalk_indonesia/4.jpg",
+        "caption": "Book step 1, select package slot."
+      },
+      {
+        "image": "https://techacorn.com/work/iwalk_indonesia/6.jpg",
+        "caption": "Book step 2, add guest and pay to book."
+      },
+      {
+        "image": "https://techacorn.com/work/iwalk_indonesia/7.jpg",
+        "caption": "Review and release the payment."
+      },
+      {
+        "image": "https://techacorn.com/work/iwalk_indonesia/guide/1.jpg",
+        "caption": "Add new package by guide panel."
+      },
+      {
+        "image": "https://techacorn.com/work/iwalk_indonesia/guide/2.jpg",
+        "caption": "Mange, task and add/update/delete using guide panel."
+      }
+    ],
+    "technologies": [
+      "React Native (For both ANDROID and IOS)",
+      "Node.js",
+      "Express js",
+      "MongoDB",
+      "Bootstrap admin panel"
+    ],
+    "links": [
+      {
+        "title": "Launch I walk Indonesia",
+        "link": "https://www.ihikeindonesia.com/"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "mobile_apps"
+    ]
+  },
+  {
+    "id": 5,
+    "index": 6,
+    "slug": "live-customer-care-chat",
+    "category": "Design & Web Development",
+    "title": "Live customer care chat.",
+    "description": "Live customer care chat, customer can ask a question one by one, using customer panel user can ask a question, and if another customer wants to ask a question, he has to be in queue until seller serves the query of customer1. The seller has the authority to end the conversation with the customer and serve another customer likewise...<br><b>NOTE: the web app UI is compitible with mobile version only.</b>",
+    "youtube_link": "https://www.youtube.com/watch?v=qvo5KpIdHD4",
+    "youtube_id": "qvo5KpIdHD4",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/videosocketchat/master.png",
+        "caption": "Live customer care chat."
+      },
+      {
+        "image": "https://techacorn.com/work/videosocketchat/1.png",
+        "caption": "Start with name and question."
+      },
+      {
+        "image": "https://techacorn.com/work/videosocketchat/2.png",
+        "caption": "You can enter in the queue, if seller serving to one customer."
+      },
+      {
+        "image": "https://techacorn.com/work/videosocketchat/3.png",
+        "caption": "Sent unread until seller, response to the current user."
+      },
+      {
+        "image": "https://techacorn.com/work/videosocketchat/5.png",
+        "caption": "Start and end the chat, using seller panel anytime."
+      }
+    ],
+    "technologies": [
+      "jQuery",
+      "Node.js",
+      "Express js",
+      "MongoDB",
+      "Bootstrap admin panel with jQuery"
+    ],
+    "links": [
+      {
+        "title": "Launch web access",
+        "link": "https://portfolio3.techacorn.com/"
+      },
+      {
+        "title": "Launch a seller panel",
+        "link": "https://portfolio3.techacorn.com/seller/users"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "web_apps"
+    ]
+  },
+  {
+    "id": 0,
+    "index": 5,
+    "slug": "threelly-the-youtube-video-time-range-benchmarker-the-chrome-extension",
+    "category": "Design & Web Development",
+    "title": "Threelly, The YouTube video time range benchmarker, The Chrome Extension.",
+    "description": "Millions of YouTube videos length is 30m+, the slice of the video feature benchmark the time range so end user get directly play the portion and save their time. Also added AI-driven auto slice index feature, which allows content creators auto slice the video.",
+    "youtube_link": "https://www.youtube.com/watch?v=50s4gxLFKOs",
+    "youtube_id": "50s4gxLFKOs",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/threelly/master.png",
+        "caption": "Threelly, Chrome Extension and Web panel"
+      },
+      {
+        "image": "https://techacorn.com/work/threelly/1.png",
+        "caption": "Login Screen"
+      },
+      {
+        "image": "https://techacorn.com/work/threelly/2.png",
+        "caption": "Payment, if you want to index the video using AI"
+      },
+      {
+        "image": "https://techacorn.com/work/threelly/3.png",
+        "caption": "Strip Api Integration"
+      },
+      {
+        "image": "https://techacorn.com/work/threelly/plugin/1.png",
+        "caption": "Chrome Extension, Indexed video demo"
+      },
+      {
+        "image": "https://techacorn.com/work/threelly/plugin/2.png",
+        "caption": "Chrome Extension, Indexed video demo"
+      },
+      {
+        "image": "https://techacorn.com/work/threelly/plugin/3.png",
+        "caption": "Chrome Extension, Indexed video demo"
+      }
+    ],
+    "technologies": [
+      "React Js",
+      "Html/Css",
+      "Material Design",
+      "jQuery"
+    ],
+    "links": [
+      {
+        "title": "Launch Threelly",
+        "link": "https://portfolio1.techacorn.com/"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "web_apps"
+    ]
+  },
+  {
+    "id": 1,
+    "index": 2,
+    "slug": "foodie-syndicate-the-new-way-to-find-foods-with-food-ingredients-food-review-and-much-more",
+    "category": "Design & Mobile Development",
+    "title": "Foodie Syndicate, the new way to find foods with food ingredients, food review and much more..",
+    "description": "Foodie Syndicate, new way to find restaurents &amp; foods based on location, food ingredentials, intolerance, food type, food name, visited by you friend, what is saying by citizen etc..",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/FoodieSyndicate/master.png",
+        "caption": "Foodie Syndicate, the new way to find foods with food ingredients, food review and much more.."
+      },
+      {
+        "image": "https://techacorn.com/work/FoodieSyndicate/1.png",
+        "caption": "Foodie Syndicate, main home screen"
+      },
+      {
+        "image": "https://techacorn.com/work/FoodieSyndicate/2.png",
+        "caption": "Foodie Syndicate, lots of filters"
+      },
+      {
+        "image": "https://techacorn.com/work/FoodieSyndicate/3.png",
+        "caption": "Foodie Syndicate, food detail page"
+      },
+      {
+        "image": "https://techacorn.com/work/FoodieSyndicate/4.png",
+        "caption": "Foodie Syndicate, follow your friend"
+      },
+      {
+        "image": "https://techacorn.com/work/FoodieSyndicate/5.png",
+        "caption": "Foodie Syndicate, review foods"
+      },
+      {
+        "image": "https://techacorn.com/work/FoodieSyndicate/6.png",
+        "caption": "Foodie Syndicate, network based on user comments."
+      },
+      {
+        "image": "https://techacorn.com/work/FoodieSyndicate/7.png",
+        "caption": "Foodie Syndicate, search food."
+      }
+    ],
+    "technologies": [
+      "React Native (For both IOS and ANDROID)",
+      "Node.js",
+      "Express js",
+      "MongoDB"
+    ],
+    "links": [],
+    "tag_class": [
+      "all_apps",
+      "mobile_apps"
+    ]
+  },
+  {
+    "id": 2,
+    "index": 2,
+    "slug": "pubbie-find-and-review-restaurants-based-on-confirm-visited-validation",
+    "category": "Design & Mobile Development",
+    "title": "Pubbie, find and review restaurants based on confirm visited validation.",
+    "description": "Pubbie, find nearest resturants using google map, direction till restaurants, visited validation, automatic review screen on successfully restaurent visited.",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/pubbie/master2.png",
+        "caption": "Pubbie, find nearest resturants using google map, direction till restaurants, visited validation, automatic review screen on successfully restaurent visited."
+      },
+      {
+        "image": "https://techacorn.com/work/pubbie/1.png",
+        "caption": "Pubbie, select your city"
+      },
+      {
+        "image": "https://techacorn.com/work/pubbie/2.png",
+        "caption": "Pubbie, find your favorite resturant, using google map"
+      },
+      {
+        "image": "https://techacorn.com/work/pubbie/3.png",
+        "caption": "Pubbie, find restaurants, with lots of features."
+      },
+      {
+        "image": "https://techacorn.com/work/pubbie/4.png",
+        "caption": "Pubbie, detail page, with visitor stastics and ask user can review."
+      }
+    ],
+    "technologies": [
+      "React Native (For both IOS and ANDROID)",
+      "Node.js",
+      "Express js",
+      "MongoDB"
+    ],
+    "links": [],
+    "tag_class": [
+      "all_apps",
+      "mobile_apps"
+    ]
+  },
+  {
+    "id": 3,
+    "index": 4,
+    "slug": "aleert-the-next-generation-professional-messanging-app",
+    "category": "Web & Mobile Development",
+    "title": "Aleert, the next generation professional messanging app.",
+    "description": "Aleert, create public and private group (say buy buy unimportant messages), you have full authority to group, messages share, schedule message and more fun, also we have web version as well.",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/Aleert/master.png",
+        "caption": "Aleert, say buy buy unimportant messages."
+      },
+      {
+        "image": "https://techacorn.com/work/Aleert/1.png",
+        "caption": "Aleert, home screen."
+      },
+      {
+        "image": "https://techacorn.com/work/Aleert/2.png",
+        "caption": "Aleert, send message, links and much more.."
+      },
+      {
+        "image": "https://techacorn.com/work/Aleert/3.png",
+        "caption": "Aleert, Get more information, about group, group creator have authority to share his/her mobile number etc.."
+      },
+      {
+        "image": "https://techacorn.com/work/Aleert/4.png",
+        "caption": "Aleert, search group by category or text."
+      }
+    ],
+    "technologies": [
+      "React Native (For both IOS and ANDROID)",
+      "Node.js",
+      "Express js",
+      "MongoDB",
+      "React Js"
+    ],
+    "links": [
+      {
+        "title": "Launch Android version",
+        "link": "https://play.google.com/store/apps/details?id=com.btech.aleert&hl=en"
+      },
+      {
+        "title": "Launch Web version",
+        "link": "https://web.aleert.com/"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "web_apps",
+      "mobile_apps"
+    ]
+  },
+  {
+    "id": 4,
+    "index": 5,
+    "slug": "drift-bot-clone-simple-question-answer-based-bot",
+    "category": "Design & Web Development",
+    "title": "Drift Bot clone, simple question answer based bot.",
+    "description": "Drift Bot clone, simply design for solve customer query by simple question, also the app is fully compitible with live chat feature.",
+    "gallery": [
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/master.jpg",
+        "caption": "Drift bot clone, a live dynamic bot question/answer server."
+      },
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/1.png",
+        "caption": "Drift Bot clone, plugin design for every website."
+      },
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/2.png",
+        "caption": "Drift Bot clone, Ask you customer simple question with dynamic options."
+      },
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/3.png",
+        "caption": "Drift Bot clone, handle dynamic next question, serve for."
+      },
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/4.png",
+        "caption": "Drift Bot clone, supporting video or any third party script."
+      },
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/admin/1.png",
+        "caption": "Drift Bot clone, add endless question, manage its hierarchy."
+      },
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/admin/1.png",
+        "caption": "Drift Bot clone, add endless question, manage its hierarchy."
+      },
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/admin/2.png",
+        "caption": "Drift Bot clone, put your question, and option, each option is attach with next question."
+      },
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/admin/3.png",
+        "caption": "Drift Bot clone, Read recently or all your customer followed steps."
+      },
+      {
+        "image": "https://techacorn.com/work/bossvideoplayer/admin/4.png",
+        "caption": "Drift Bot clone, Read simple representation, to read your customer selected option and messages."
+      }
+    ],
+    "technologies": [
+      "jQuery",
+      "Node.js",
+      "Express js",
+      "MongoDB",
+      "Bootstrap admin panel with jQuery"
+    ],
+    "links": [
+      {
+        "title": "Launch web access",
+        "link": "https://bossvideoplayer.com/"
+      },
+      {
+        "title": "Launch an admin panel",
+        "link": "http://81.4.110.105:8442/admin/auth/login"
+      }
+    ],
+    "tag_class": [
+      "all_apps",
+      "web_apps"
+    ]
+  }
+]

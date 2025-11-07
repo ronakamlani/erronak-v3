@@ -1,4 +1,3 @@
-import profileKatakana from 'assets/katakana-profile.svg?url';
 import profileImgLarge from 'assets/profile-large.jpg';
 import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
 import profileImg from 'assets/profile.jpg';
@@ -21,10 +20,10 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Ronak Amlani, a Senior MERN Stack Engineer and Full-Stack Architect based in Sydney. I have over a decade of experience building scalable web and SaaS platforms, working across startups and enterprise teams. I focus on React-led frontend experiences, robust Node.js APIs, and cloud-native infrastructure that scales.
+      I’m Ronak Amlani, a Senior MERN Stack Engineer & Full-Stack Architect based in Sydney with 10+ years of experience building scalable web and SaaS platforms for startups and enterprises. I specialize in React UI, Node.js APIs, and cloud-native architecture.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I combine product thinking with hands-on engineering — from rapid prototyping and motion design to API design, data modelling and deployment automation. I lead small engineering teams, mentor engineers, and collaborate closely with product and design to deliver customer-focused solutions. If you have a project or role to discuss, let's connect.
+      I blend product vision with hands-on development — from prototyping and motion design to API/data modelling and deployment automation. I lead teams, mentor engineers, and work closely with product & design to deliver user-focused solutions. Let’s connect if you have a project or role in mind.
     </Text>
   </Fragment>
 );
@@ -80,16 +79,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
                 />
-                <svg
-                  aria-hidden="true"
-                  width="135"
-                  height="765"
-                  viewBox="0 0 135 765"
-                  className={styles.svg}
-                  data-visible={visible}
-                >
-                  <use href={`${profileKatakana}#katakana-profile`} />
-                </svg>
+                
               </div>
             </div>
           </div>
