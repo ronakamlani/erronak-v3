@@ -13,7 +13,7 @@ import volkiharEnderalLogoPlaceholder from 'assets/volkihar-enderal-logo-placeho
 import volkiharEnderalLogo from 'assets/volkihar-enderal-logo.png';
 import volkiharEnderalPlaceholder from 'assets/volkihar-enderal-placeholder.jpg';
 import volkiharEnderal from 'assets/volkihar-enderal.jpg';
-import VolkiharKnightLogo from 'assets/volkihar-logo.svg';
+//import VolkiharKnightLogo from 'assets/volkihar-logo.svg';
 import volkiharSlide1Large from 'assets/volkihar-slide-1-large.jpg';
 import volkiharSlide1 from 'assets/volkihar-slide-1.jpg';
 import volkiharSlide2Large from 'assets/volkihar-slide-2-large.jpg';
@@ -127,10 +127,10 @@ export function VolkiharKnight() {
         <ProjectSection>
           <ProjectSectionContent>
             <div className={styles.logoContainer}>
-              <VolkiharKnightLogo
+              {/* <VolkiharKnightLogo
                 role="img"
                 aria-label="The Volkihar Knight logo, a monogram using the letters 'V' and 'K"
-              />
+              /> */}
             </div>
             <ProjectTextRow center noMargin>
               <ProjectSectionHeading>Identity design</ProjectSectionHeading>

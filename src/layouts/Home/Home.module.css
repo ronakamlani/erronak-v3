@@ -1,3 +1,9 @@
 .home {
   overflow-x: hidden;
 }
+
+.allProjectsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

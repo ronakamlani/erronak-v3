@@ -6,7 +6,6 @@ import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
 import { Image } from 'components/Image';
-import { Link } from 'components/Link';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { Transition } from 'components/Transition';
@@ -20,7 +19,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Ronak Amlani, a Senior MERN Stack Engineer & Full-Stack Architect based in Sydney with 10+ years of experience building scalable web and SaaS platforms for startups and enterprises. I specialize in React UI, Node.js APIs, and cloud-native architecture.
+      I’m Ronak Amlani, a Senior MERN Stack Engineer & Full-Stack Architect based in Sydney with 12+ years of experience building scalable web and SaaS platforms for startups and enterprises. I specialize in React UI, Node.js APIs, and cloud-native architecture.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I blend product vision with hands-on development — from prototyping and motion design to API/data modelling and deployment automation. I lead teams, mentor engineers, and work closely with product & design to deliver user-focused solutions. Let’s connect if you have a project or role in mind.

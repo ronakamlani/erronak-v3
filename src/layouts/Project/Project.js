@@ -18,6 +18,7 @@ export function ProjectHeader({
   linkLabel = 'Visit website',
   url,
   roles,
+  links,
   className,
 }) {
   return (
@@ -30,9 +31,12 @@ export function ProjectHeader({
           <Heading className={styles.title} level={2} as="h1">
             {title}
           </Heading>
-          <Text className={styles.description} size="xl" as="p">
-            {description}
-          </Text>
+          <Text
+            className={styles.description}
+            size="xl"
+            as="p"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
           {!!url && (
             <Button
               secondary
@@ -43,6 +47,22 @@ export function ProjectHeader({
             >
               {linkLabel}
             </Button>
+          )}
+          {Array.isArray(links) && links.length > 0 && (
+            <div className={styles.multiLinks}>
+              {links.map(link => (
+                <Button
+                  key={link.link}
+                  secondary
+                  iconHoverShift
+                  className={styles.linkButton}
+                  icon="chevronRight"
+                  href={link.link}
+                >
+                  {link.title}
+                </Button>
+              ))}
+            </div>
           )}
         </div>
         {!!roles?.length && (

@@ -16,6 +16,10 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>undefined/projects/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>undefined/projects/slice/</loc>
     <changefreq>monthly</changefreq>
   </url>

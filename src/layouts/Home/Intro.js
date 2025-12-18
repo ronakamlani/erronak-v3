@@ -14,6 +14,12 @@ import { Fragment, useEffect, useState } from 'react';
 import { cssProps } from 'utils/style';
 import styles from './Intro.module.css';
 import { NeuralNetworkOrb } from './NeuralNetworkOrb';
+import portfolioData from 'data/portfolio.json'; // Adjust path as needed
+
+// Build FEATURE_PROJECTS outside component
+const FEATURE_PROJECTS = Object.freeze(
+  portfolioData.filter(item => item.features === true)
+);
 
 const DisplacementSphere = dynamic(() =>
   import('layouts/Home/DisplacementSphere').then(mod => mod.DisplacementSphere)
@@ -114,7 +120,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                 </div>
               </Heading>
             </header>
-            <RouterLink href="/#project-1">
+            <RouterLink href={`#${FEATURE_PROJECTS[0].slug}`}>
               <a
                 className={`${styles.scrollIndicator} ${scrollHover ? styles.scrollIndicatorHover : ''}`}
                 data-status={status}
@@ -128,7 +134,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                 <VisuallyHidden>Scroll to projects</VisuallyHidden>
               </a>
             </RouterLink>
-            <RouterLink href="/#project-1">
+            <RouterLink href={`#${FEATURE_PROJECTS[0].slug}`}>
               <a
                 className={`${styles.mobileScrollIndicator} ${scrollHover ? styles.mobileScrollIndicatorHover : ''}`}
                 data-status={status}

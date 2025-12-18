@@ -48,44 +48,34 @@
   }
 
   &[data-secondary='true'] {
-    --buttonSpace: 10px;
     --buttonTextColor: rgb(var(--rgbPrimary));
 
-    background: none;
-    padding-left: var(--buttonSpace);
-    padding-right: var(--buttonSpace);
-    position: relative;
-    left: calc(var(--buttonSpace) * -1);
-    height: calc((32 / 16) * 1rem);
+    background: transparent; /* transparent fill */
+    border: none; /* ❌ remove rectangular border */
 
     &::after {
       content: '';
-      height: calc((32 / 16) * 1rem);
       position: absolute;
       inset: 0;
-      background-color: rgb(var(--rgbPrimary) / 0.2);
-      transform: scale3d(0, 1, 1);
-      transform-origin: right;
+      background-color: transparent; /* no fill */
       clip-path: none;
+      border: 1px solid rgb(var(--rgbPrimary)); /* traces clip-path edges fully */
+      pointer-events: none;
+      z-index: -1;
     }
 
     &:hover {
-      transform: none;
+      transform: scale(1.05);
       background: transparent;
     }
 
     &:hover::after {
-      transform: scale3d(1, 1, 1);
-      transform-origin: left;
-    }
-
-    &[data-icon='chevronRight'] {
-      padding-left: calc(var(--buttonSpace) / 2);
+      background-color: rgba(var(--rgbPrimary), 0.05); /* light fill on hover */
     }
 
     @media (--mediaUseMotion) {
       &::after {
-        transition: transform var(--durationM) var(--bezierFastoutSlowin);
+        transition: background-color var(--durationM) var(--bezierFastoutSlowin);
       }
     }
   }

@@ -39,8 +39,10 @@
   "dependencies": {
     "fathom-client": "^3.5.0",
     "framer-motion": "^7.1.0",
+    "fs": "^0.0.1-security",
     "mdx-bundler": "^9.0.1",
     "next": "^12.2.5",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-toastify": "^11.0.5",

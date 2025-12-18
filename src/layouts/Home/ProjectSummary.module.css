@@ -86,7 +86,7 @@
 }
 
 .model {
-  --width: 180%;
+  --width: 130%;
   --aspectRatio: 12 / 10;
 
   min-width: var(--width);
@@ -99,11 +99,11 @@
     left: 14%;
 
     @media (--mediaDesktop) {
-      --width: 180%;
+      --width: 130%;
     }
 
     @media (--mediaTablet) {
-      --width: 140%;
+      --width: 120%;
 
       top: 10%;
       left: 0;
