@@ -65,7 +65,9 @@ export async function generateImage(width = 1, height = 1) {
     ctx.fillRect(0, 0, width, height);
 
     canvas.toBlob(async blob => {
-      if (!blob) throw new Error('Video thumbnail failed to load');
+      if (!blob){
+        return;
+      };
       const image = URL.createObjectURL(blob);
       canvas.remove();
       resolve(image);

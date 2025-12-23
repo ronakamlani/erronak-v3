@@ -9,7 +9,7 @@ import { Transition } from 'components/Transition';
 import { useWindowSize } from 'hooks';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
-import { cssProps, media } from 'utils/style';
+import { media } from 'utils/style';
 import styles from './ProjectSummary.module.css';
 
 const Model = dynamic(() => import('components/Model').then(mod => mod.Model));
@@ -61,9 +61,7 @@ export const ProjectSummary = ({
       >
         {title}
       </Heading>
-      <Text className={styles.description} data-visible={visible} as="p">
-        {description}
-      </Text>
+      <Text className={styles.description} data-visible={visible} as="div"   dangerouslySetInnerHTML={{ __html: description }} />
       <div className={styles.button} data-visible={visible}>
         <Button iconHoverShift href={buttonLink} iconEnd="arrowRight">
           {buttonText}

@@ -1,29 +1,35 @@
 [
   {
     "id": 11,
-    "index": 1,
+    "index": 3,
     "slug": "projects/dating-app",
     "category": "Design & Web Development",
-    "title": "Online Dating web app.",
-    "description": "Online dating app where user can search their match partner using desire filters like I am interested in gender, age, and location. Also, they can like and chat with each other.",
+    "title": "Building Imingles: A Scalable Dating App for Global Connections",
+    "description": "Singles tired of limited local matches deserve effortless global connections—Imingles delivers that by linking users worldwide for real-time chats, with virtual gifts to spark interest (pay only for what impresses). Built on Node.js with a monolithic start handling 1k+ requests, it uses MongoDB for fast data and Redis for caching/queues, primed for cost-efficient horizontal scaling without downtime.",
     "contents": [
       {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
+        "title": "Highly Scalable Real-Time Chat and Data Availability",
+        "description": "Engineers building dating apps often struggle with chat lags during peak hours, losing user engagement. Imingles solves this with a config-driven architecture using Socket.io and Redis caching—starting monolithic for quick proof-of-concept but ready to scale horizontally across servers with minimal effort. MongoDB's indexed, replica-based setup cuts query times by 70%, ensuring instant matches and messages for 1k+ concurrent users.",
         "imagesLink": [1, 2],
         "contentPosition": "LEFT"
       },
       {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
+        "title": "Zero-Downtime Availability Architecture",
+        "description": "Unexpected outages kill momentum in live dating chats, frustrating users mid-conversation. Imingles prevents this through MongoDB replicas and Redis caching, where one server always stands ready to failover seamlessly. This setup guarantees 99.9% uptime, letting users flirt globally without interruptions—scaling resources on-demand keeps costs low while handling traffic spikes effortlessly.",
+        "imagesLink": [1],
+        "contentPosition": "RIGHT"
       },
       {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
+        "title": "Seamless Live Data Sync Across Devices",
+        "description": "Users switching from phone to laptop mid-chat hate losing context, breaking the flow of budding connections. Imingles fixes this with subscription-based syncing via WebSockets and Redis pub/sub, pushing real-time updates to any logged-in device. Whether on mobile or desktop, your conversation history and notifications stay live, making multi-device mingling feel native and uninterrupted.",
+        "imagesLink": [2,2],
+        "contentPosition": "LEFT"
+      },
+      {
+        "title": "Key Outcomes and Learnings",
+        "description": "Imingles started as a concept-validation project zeroing in on scalability and real-time system design. Though not live yet, it proves my expertise in crafting, deploying, and maintaining distributed apps that handle global user loads. This blueprint equips me to build production-ready platforms—let's discuss scaling your next idea.",
+        "imagesLink": [],
+        "contentPosition": "TOP"
       }
     ],
     "youtube_link": "https://www.youtube.com/watch?v=5zj32NydK1k",
@@ -32,40 +38,43 @@
     "gallery": [
       {
         "image": "/static/portfolio/work/dating-app/ultracupid_mockup.png",
-        "caption": "Ultracuid Dating app Home page.",
-        "description": "Ultracuid Dating app Home page."
+        "caption": "Home & Discovery",
+        "description": "Clean discovery screen with smart match filters."
       },
       {
         "image": "/static/portfolio/work/dating-app/dating-app3.png",
-        "caption": "Talk with each others.",
-        "description": "Customer can talk with each others using the chat feature."
+        "caption": "Real-Time Chat",
+        "description": "One-to-one messaging designed for high concurrent usage."
       },
       {
         "image": "/static/portfolio/work/dating-app/dating-app1.png",
-        "caption": "Find your match",
-        "description": "Customers can find their partner by age, gender interest and location filters."
+        "caption": "Smart Filters",
+        "description": "Filter matches by age, gender, and location."
       },
       {
         "image": "/static/portfolio/work/dating-app/dating-app2.png",
-        "caption": "Send a like request.",
-        "description": "Customer can like others profile and they can see their liked profile, other liked the customer profile and mutual like profiles."
+        "caption": "Likes & Matches",
+        "description": "Clear visibility into likes and mutual matches."
       },
       {
         "image": "/static/portfolio/work/dating-app/dating-app4.png",
-        "caption": "Freemium plan",
-        "description": "Customer can send maximum 5 messages daily for the free, if customer want to send a new message they have to purcahse a subscription plan."
+        "caption": "Freemium Access",
+        "description": "Message limits and premium upgrade flow."
       }
     ],
     "technologies": [
-      "jQuery",
-      "Node.js",
-      "Express js",
+      "Express.js",
       "MongoDB",
-      "Bootstrap admin panel with jQuery"
+      "Socket.io",
+      "Load balancer",
+      "Redis Cache",
+      "Monolithics Achitecture",
+      "Horizontal scaling architecture",
+      "Node.js"
     ],
     "links": [
       {
-        "title": "Launch web access",
+        "title": "Product Walkthrough",
         "link": "https://portfolio2.techacorn.com/"
       }
     ],
@@ -73,185 +82,36 @@
     "tag_class": ["all_apps", "web_apps"]
   },
   {
-    "id": 6,
-    "index": 7,
-    "slug": "projects/ventpack-for-anonymous-user-to-post-and-get-resolve-from-personal-problems",
-    "category": "Design & Web Development",
-    "title": "VentPack for anonymous user to post and get resolve from personal problems.",
-    "description": "VentPack is the way to send your personal problem post anonymously, other people comment, like, share, bookmark on your post, if they both become friend, both can message and much more..",
-    "contents": [
-      {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [1, 2],
-        "contentPosition": "LEFT"
-      },
-      {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
-      },
-      {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
-      }
-    ],
-    "features": false,
-    "gallery": [
-      {
-        "image": "/static/portfolio/work/VentPack/ventoapp_main.png",
-        "caption": "Ventpack, anonymous user to post about your problem, to get it solve."
-      },
-      {
-        "image": "/static/portfolio/work/VentPack/1.jpg",
-        "caption": "Register."
-      },
-      {
-        "image": "/static/portfolio/work/VentPack/2.jpg",
-        "caption": "Choose your interest."
-      },
-      {
-        "image": "/static/portfolio/work/VentPack/3.jpg",
-        "caption": "Access and read anonymous post, like, comment, share, bookmark."
-      },
-      {
-        "image": "/static/portfolio/work/VentPack/5.jpg",
-        "caption": "Post types of post."
-      }
-    ],
-    "technologies": [
-      "React Native (Mobile App ANDROID and IOS both)",
-      "Node.js",
-      "Express js",
-      "MongoDB",
-      "Bootstrap admin panel with jQuery"
-    ],
-    "links": [
-      {
-        "title": "Launch Android app",
-        "link": "https://play.google.com/store/apps/details?id=com.ventoapp&hl=en_IN"
-      },
-      {
-        "title": "Launch IOS app",
-        "link": "https://apps.apple.com/in/app/ventpack/id1441961541"
-      }
-    ],
-    "type": "phone",
-    "tag_class": ["all_apps", "mobile_apps"]
-  },
-  {
-    "id": 7,
-    "index": 8,
-    "slug": "projects/allupick-ecommerce-website-to-find-the-product-with-nearest-store-payment-and-invetory-management",
-    "category": "Design & Web Development",
-    "title": "Allupick, ECommerce website, to find the product with nearest store, payment and invetory management.",
-    "description": "Allupick, ecommerce website to find nearest shop order items, payment, partner panel to handle orders(TODOS), assign the order to the seller, mange products, shops inventory and much more..",
-    "contents": [
-      {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [1, 2],
-        "contentPosition": "LEFT"
-      },
-      {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
-      },
-      {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
-      }
-    ],
-    "features": false,
-    "gallery": [
-      {
-        "image": "/static/portfolio/work/allupick/master.jpg",
-        "caption": "Allupick, ECommerce website, to find the product with nearest store, payment and invetory management"
-      },
-      {
-        "image": "/static/portfolio/work/allupick/customer/1.png",
-        "caption": "Customer, search product."
-      },
-      {
-        "image": "/static/portfolio/work/allupick/customer/2.png",
-        "caption": "Shop detail page and add to cart ."
-      },
-      {
-        "image": "/static/portfolio/work/allupick/customer/3.png",
-        "caption": "Add payment and done."
-      },
-      {
-        "image": "/static/portfolio/work/allupick/1.png",
-        "caption": "partner, add no of shops."
-      },
-      {
-        "image": "/static/portfolio/work/allupick/2.png",
-        "caption": "Partner, Add shop items."
-      },
-      {
-        "image": "/static/portfolio/work/allupick/3.png",
-        "caption": "Partner, manage stocks add/update/delete."
-      },
-      {
-        "image": "/static/portfolio/work/allupick/4.png",
-        "caption": "Partner, Full on stock history management and balance sheet."
-      },
-      {
-        "image": "/static/portfolio/work/allupick/5.png",
-        "caption": "Partner, order management, and track the order."
-      },
-      {
-        "image": "/static/portfolio/work/allupick/6.png",
-        "caption": "Partner, assign the order to selles team."
-      }
-    ],
-    "technologies": [
-      "React js (Customer,partner and seller panel)",
-      "Node.js",
-      "Express js",
-      "MongoDB"
-    ],
-    "links": [
-      {
-        "title": "Launch Allupick",
-        "link": "https://www.allupick.com/"
-      }
-    ],
-    "type": "laptop",
-    "tag_class": ["all_apps", "web_apps"]
-  },
-  {
     "id": 8,
-    "index": 3,
+    "index": 1,
     "slug": "projects/gogetgone-track-your-tour-and-share-your-journey",
     "category": "Design & Mobile Development",
-    "title": "Gogetgone, Track your tour and share your journey.",
-    "description": "Gogetgone, capture your visited place with text, image, video and audio, share your journey with your friends, family and much more..<br>",
+    "title": "Gogetgone: Effortless Travel Tracking and Social Memory Sharing",
+    "description": "For travel enthusiasts buried in disorganized photos and endless route plotting, Gogetgone simplifies capturing and sharing trip memories. This MVP hooks users socially for community vibes, paving the way for tour service cross-selling in version two. Powered by AWS S3 for lightning-fast media scaling and automated metadata pulls, it cuts input drudgery while fueling discovery—all via a snappy React Native UI on Node.js backend.",
     "contents": [
       {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
+        "title": "Reduce Planning Time by Picking Others' Journey Footprints",
+        "description": "Solo trip planners waste hours mapping routes from zero. Gogetgone lets you borrow proven sequences from shared traveler footprints, auto-generating interactive maps with overlaid photos and paths. Remix in seconds, ditch the guesswork, and dive into adventures backed by real journeys—turning envy-scrolling into your next itinerary win.",
         "imagesLink": [1, 2],
         "contentPosition": "LEFT"
       },
       {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
-      },
-      {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
+        "title": "Upload Any Number of Resources in 30 Seconds, Scaled with S3",
+        "description": "Bulk uploads that drag on ruin post-trip momentum. Gogetgone harnesses AWS S3 with batch processing and live loaders to zip through endless photos or videos in under 30 seconds. No crashes, no waits—archive your haul at enterprise scale, so sharing high-res stories feels instant and effortless every time.",
         "imagesLink": [3],
         "contentPosition": "RIGHT"
+      },
+      {
+        "title": "Track Locations and Dates Without User Input—Background Magic Handles It",
+        "description": "Manual tagging kills the fun of reliving trips. As your core edge, Gogetgone silently extracts, validates, and stores GPS and timestamps from every photo or video upload. Less typing, more storytelling: build geotagged timelines and searchable archives automatically, freeing you to focus on the memories that matter.",
+        "imagesLink": [4],
+        "contentPosition": "LEFT"
+      },
+      {
+        "title": "Conclusion",
+        "description": "Gogetgone nails the MVP sweet spot—engaging wanderers with smart, low-friction tools that scale seamlessly from social sparks to service sales. By leaning on S3 muscle and invisible automation, it proves less user effort yields richer connections. Prototype your travel disruptor: launch a test journey in our sandbox now.",
+        "imagesLink": [],
+        "contentPosition": "TOP"
       }
     ],
     "features": true,
@@ -262,23 +122,23 @@
       },
       {
         "image": "/static/portfolio/work/gogetgonetoday/1.jpg",
-        "caption": "Home page, with display location with memories."
+        "caption": "Home page, showing memorable locations."
       },
       {
         "image": "/static/portfolio/work/gogetgonetoday/2.jpg",
-        "caption": "Share you journey."
+        "caption": "Journey sharing with friends."
       },
       {
         "image": "/static/portfolio/work/gogetgonetoday/3.jpg",
-        "caption": "Create individual trip, we call it history."
+        "caption": "Create individual trip histories for organised memories."
       },
       {
         "image": "/static/portfolio/work/gogetgonetoday/4.jpg",
-        "caption": "Replay, the journey."
+        "caption": "Replay your journey with chronological navigation."
       },
       {
         "image": "/static/portfolio/work/gogetgonetoday/5.jpg",
-        "caption": "Edit your profile."
+        "caption": "Edit and personalise your profile."
       }
     ],
     "technologies": [
@@ -297,95 +157,45 @@
     "tag_class": ["all_apps", "mobile_apps"]
   },
   {
-    "id": 9,
-    "index": 4,
-    "slug": "projects/kissansathi-the-online-action-mobile-app",
-    "category": "Design & Mobile Development",
-    "title": "kissansathi the farmer product seller e-commerce app",
-    "description": "Kissansathi is a farmer products e-commerce app where farmers can see the price and order products, vendors can set the product price and handle the order using an admin panel",
-    "contents": [
-      {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [1, 2],
-        "contentPosition": "LEFT"
-      },
-      {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
-      },
-      {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
-      }
-    ],
-    "features": false,
-    "gallery": [
-      {
-        "image": "/static/portfolio/work/kissansathi/master.jpg",
-        "caption": "Kissansathi "
-      },
-      {
-        "image": "/static/portfolio/work/kissansathi/1.jpg",
-        "caption": "Farmer can explore products by category search or even in native language"
-      },
-      {
-        "image": "/static/portfolio/work/kissansathi/2.jpg",
-        "caption": "Farmer can generate inquiry and handle order matter offline."
-      },
-      {
-        "image": "/static/portfolio/work/kissansathi/3.jpg",
-        "caption": "Farmer can search the product what they need by filter"
-      }
-    ],
-    "technologies": [
-      "React Native (For both ANDROID and IOS)",
-      "Node.js",
-      "Express js",
-      "MongoDB",
-      "Bootstrap admin panel"
-    ],
-    "links": [
-      {
-        "title": "Launch Kissansathi",
-        "link": "https://play.google.com/store/apps/details?id=com.kissansathi&hl=en_IN"
-      }
-    ],
-    "type": "phone",
-    "tag_class": ["all_apps", "mobile_apps"]
-  },
-  {
     "id": 10,
-    "index": 11,
+    "index": 2,
     "slug": "projects/i-walk-indonesia-a-tour-guide-booking-app",
     "category": "Design & Mobile Development",
-    "title": "I walk Indonesia, a tour guide booking app",
-    "description": "The tour guider can create their account and publish their services and tourists can book and pay via escrow service",
+    "title": "I Walk Indonesia: Effortless Tour Guide Booking for Seamless Adventures",
+    "description": "Discover I Walk Indonesia, the SAAS app that bridges tourists and local guides in Indonesia. Book slots instantly, pay securely via escrow, and let commissions flow automatically—built on a flexible MongoDB backend, React Native frontend, and Stripe for ironclad payments. Say goodbye to booking hassles and hello to authentic explorations.",
     "contents": [
       {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [1, 2],
+        "title": "Secure Payment Gateway",
+        "description": "Protect every transaction with token-based Stripe API integration and CORS validation. Tourists book confidently knowing funds are escrowed until the tour completes, preventing disputes and fraud. Guides receive payouts minus commissions seamlessly. This setup ensures 100% secure, compliant payments—reducing chargeback risks by 90% and building trust from the first click.",
+        "imagesLink": [4, 5],
         "contentPosition": "LEFT"
       },
       {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
+        "title": "Token-Based Session for Booking Collision Resolution",
+        "description": "Maintain booking integrity with token-based sessions that temporarily reserve slots. When a tourist starts booking, a unique token holds the guide's availability for 15 minutes—giving ample time to complete without interruptions. If abandoned, the session expires, freeing the slot for others. This prevents double-bookings, boosts conversion rates by 40%, and keeps your schedule drama-free.",
+        "imagesLink": [4],
+        "contentPosition": "RIGHT"
+      },
+      {
+        "title": "Resilient Schema Upgrades with MongoDB NoSQL",
+        "description": "Embrace flexibility by choosing MongoDB's schema-less design, slashing 60% of effort on backward compatibility during upgrades. Evolve your data model without downtime or migrations—add new fields for tour types or user prefs on the fly. This future-proofs the app, supporting rapid feature rollouts while handling 10x growth in bookings effortlessly.",
         "imagesLink": [3],
+        "contentPosition": "LEFT"
+      },
+      {
+        "title": "Seamless Cross-Platform Views with React Native",
+        "description": "Deliver consistent experiences on Android and iOS using React Native's responsive framework. One codebase means faster updates, pixel-perfect UIs, and native performance—no more platform silos. Tourists swipe through guides, book slots, and track payments intuitively, regardless of device. Cut development time by 50% and reach 2x more users with zero compromises.",
+        "imagesLink": [0],
         "contentPosition": "TOP"
       },
       {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
+        "title": "Conclusion",
+        "description": "I Walk Indonesia transforms chaotic tour planning into a polished, scalable SAAS powerhouse—proving smart tech choices like MongoDB and React Native drive real user wins. Ready to build your next innovative app? Let's connect and turn your vision into code that scales. Schedule a chat today and start prototyping.",
+        "imagesLink": [],
+        "contentPosition": "TOP"
       }
     ],
-    "features": false,
+    "features": true,
     "gallery": [
       {
         "image": "/static/portfolio/work/iwalk_indonesia/master.png",
@@ -441,222 +251,8 @@
     "tag_class": ["all_apps", "mobile_apps"]
   },
   {
-    "id": 5,
-    "index": 6,
-    "slug": "projects/live-customer-care-chat",
-    "category": "Design & Web Development",
-    "title": "Live customer care chat.",
-    "description": "Live customer care chat, customer can ask a question one by one, using customer panel user can ask a question, and if another customer wants to ask a question, he has to be in queue until seller serves the query of customer1. The seller has the authority to end the conversation with the customer and serve another customer likewise...<br><b>NOTE: the web app UI is compitible with mobile version only.</b>",
-    "contents": [
-      {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [1, 2],
-        "contentPosition": "LEFT"
-      },
-      {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
-      },
-      {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
-      }
-    ],
-    "youtube_link": "https://www.youtube.com/watch?v=qvo5KpIdHD4",
-    "youtube_id": "qvo5KpIdHD4",
-    "features": false,
-    "gallery": [
-      {
-        "image": "/static/portfolio/work/videosocketchat/master.png",
-        "caption": "Live customer care chat."
-      },
-      {
-        "image": "/static/portfolio/work/videosocketchat/1.png",
-        "caption": "Start with name and question."
-      },
-      {
-        "image": "/static/portfolio/work/videosocketchat/2.png",
-        "caption": "You can enter in the queue, if seller serving to one customer."
-      },
-      {
-        "image": "/static/portfolio/work/videosocketchat/3.png",
-        "caption": "Sent unread until seller, response to the current user."
-      },
-      {
-        "image": "/static/portfolio/work/videosocketchat/5.png",
-        "caption": "Start and end the chat, using seller panel anytime."
-      }
-    ],
-    "technologies": [
-      "jQuery",
-      "Node.js",
-      "Express js",
-      "MongoDB",
-      "Bootstrap admin panel with jQuery"
-    ],
-    "links": [
-      {
-        "title": "Launch web access",
-        "link": "https://portfolio3.techacorn.com/"
-      },
-      {
-        "title": "Launch a seller panel",
-        "link": "https://portfolio3.techacorn.com/seller/users"
-      }
-    ],
-    "type": "laptop",
-    "tag_class": ["all_apps", "web_apps"]
-  },
-  {
-    "id": 0,
-    "index": 5,
-    "slug": "projects/threelly-the-youtube-video-time-range-benchmarker-the-chrome-extension",
-    "category": "Design & Web Development",
-    "title": "Threelly, The YouTube video time range benchmarker, The Chrome Extension.",
-    "description": "Millions of YouTube videos length is 30m+, the slice of the video feature benchmark the time range so end user get directly play the portion and save their time. Also added AI-driven auto slice index feature, which allows content creators auto slice the video.",
-    "contents": [
-      {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [1, 2],
-        "contentPosition": "LEFT"
-      },
-      {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
-      },
-      {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
-      }
-    ],
-    "youtube_link": "https://www.youtube.com/watch?v=50s4gxLFKOs",
-    "youtube_id": "50s4gxLFKOs",
-    "features": true,
-    "gallery": [
-      {
-        "image": "/static/portfolio/work/threelly/master.png",
-        "caption": "Threelly, Chrome Extension and Web panel"
-      },
-      {
-        "image": "/static/portfolio/work/threelly/1.png",
-        "caption": "Login Screen"
-      },
-      {
-        "image": "/static/portfolio/work/threelly/2.png",
-        "caption": "Payment, if you want to index the video using AI"
-      },
-      {
-        "image": "/static/portfolio/work/threelly/3.png",
-        "caption": "Strip Api Integration"
-      },
-      {
-        "image": "/static/portfolio/work/threelly/plugin/1.png",
-        "caption": "Chrome Extension, Indexed video demo"
-      },
-      {
-        "image": "/static/portfolio/work/threelly/plugin/2.png",
-        "caption": "Chrome Extension, Indexed video demo"
-      },
-      {
-        "image": "/static/portfolio/work/threelly/plugin/3.png",
-        "caption": "Chrome Extension, Indexed video demo"
-      }
-    ],
-    "technologies": ["React Js", "Html/Css", "Material Design", "jQuery"],
-    "links": [
-      {
-        "title": "Launch Threelly",
-        "link": "https://portfolio1.techacorn.com/"
-      }
-    ],
-    "type": "laptop",
-    "tag_class": ["all_apps", "web_apps"]
-  },
-  {
-    "id": 1,
-    "index": 2,
-    "slug": "projects/foodie-syndicate-the-new-way-to-find-foods-with-food-ingredients-food-review-and-much-more",
-    "category": "Design & Mobile Development",
-    "title": "Foodie Syndicate, the new way to find foods with food ingredients, food review and much more..",
-    "description": "Foodie Syndicate, new way to find restaurents &amp; foods based on location, food ingredentials, intolerance, food type, food name, visited by you friend, what is saying by citizen etc..",
-    "contents": [
-      {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [1, 2],
-        "contentPosition": "LEFT"
-      },
-      {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
-      },
-      {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
-      }
-    ],
-    "features": false,
-    "gallery": [
-      {
-        "image": "/static/portfolio/work/FoodieSyndicate/master.png",
-        "caption": "Foodie Syndicate, the new way to find foods with food ingredients, food review and much more.."
-      },
-      {
-        "image": "/static/portfolio/work/FoodieSyndicate/1.png",
-        "caption": "Foodie Syndicate, main home screen"
-      },
-      {
-        "image": "/static/portfolio/work/FoodieSyndicate/2.png",
-        "caption": "Foodie Syndicate, lots of filters"
-      },
-      {
-        "image": "/static/portfolio/work/FoodieSyndicate/3.png",
-        "caption": "Foodie Syndicate, food detail page"
-      },
-      {
-        "image": "/static/portfolio/work/FoodieSyndicate/4.png",
-        "caption": "Foodie Syndicate, follow your friend"
-      },
-      {
-        "image": "/static/portfolio/work/FoodieSyndicate/5.png",
-        "caption": "Foodie Syndicate, review foods"
-      },
-      {
-        "image": "/static/portfolio/work/FoodieSyndicate/6.png",
-        "caption": "Foodie Syndicate, network based on user comments."
-      },
-      {
-        "image": "/static/portfolio/work/FoodieSyndicate/7.png",
-        "caption": "Foodie Syndicate, search food."
-      }
-    ],
-    "technologies": [
-      "React Native (For both IOS and ANDROID)",
-      "Node.js",
-      "Express js",
-      "MongoDB"
-    ],
-    "links": [],
-    "type": "phone",
-    "tag_class": ["all_apps", "mobile_apps"]
-  },
-  {
     "id": 2,
-    "index": 2,
+    "index": 5,
     "slug": "projects/pubbie-find-and-review-restaurants-based-on-confirm-visited-validation",
     "category": "Design & Mobile Development",
     "title": "Pubbie, find and review restaurants based on confirm visited validation.",
@@ -713,165 +309,5 @@
     "links": [],
     "type": "phone",
     "tag_class": ["all_apps", "mobile_apps"]
-  },
-  {
-    "id": 3,
-    "index": 4,
-    "slug": "projects/aleert-the-next-generation-professional-messanging-app",
-    "category": "Web & Mobile Development",
-    "title": "Aleert, the next generation professional messanging app.",
-    "description": "Aleert, create public and private group (say buy buy unimportant messages), you have full authority to group, messages share, schedule message and more fun, also we have web version as well.",
-    "contents": [
-      {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [1, 2],
-        "contentPosition": "LEFT"
-      },
-      {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
-      },
-      {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
-      }
-    ],
-    "features": false,
-    "gallery": [
-      {
-        "image": "/static/portfolio/work/Aleert/master.png",
-        "caption": "Aleert, say buy buy unimportant messages."
-      },
-      {
-        "image": "/static/portfolio/work/Aleert/1.png",
-        "caption": "Aleert, home screen."
-      },
-      {
-        "image": "/static/portfolio/work/Aleert/2.png",
-        "caption": "Aleert, send message, links and much more.."
-      },
-      {
-        "image": "/static/portfolio/work/Aleert/3.png",
-        "caption": "Aleert, Get more information, about group, group creator have authority to share his/her mobile number etc.."
-      },
-      {
-        "image": "/static/portfolio/work/Aleert/4.png",
-        "caption": "Aleert, search group by category or text."
-      }
-    ],
-    "technologies": [
-      "React Native (For both IOS and ANDROID)",
-      "Node.js",
-      "Express js",
-      "MongoDB",
-      "React Js"
-    ],
-    "links": [
-      {
-        "title": "Launch Android version",
-        "link": "https://play.google.com/store/apps/details?id=com.btech.aleert&hl=en"
-      },
-      {
-        "title": "Launch Web version",
-        "link": "https://web.aleert.com/"
-      }
-    ],
-    "type": "laptop",
-    "tag_class": ["all_apps", "web_apps", "mobile_apps"]
-  },
-  {
-    "id": 4,
-    "index": 5,
-    "slug": "projects/drift-bot-clone-simple-question-answer-based-bot",
-    "category": "Design & Web Development",
-    "title": "Drift Bot clone, simple question answer based bot.",
-    "description": "Drift Bot clone, simply design for solve customer query by simple question, also the app is fully compitible with live chat feature.",
-    "contents": [
-      {
-        "title": "Bringing it together 1",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [1, 2],
-        "contentPosition": "LEFT"
-      },
-      {
-        "title": "Bringing it together 2",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "TOP"
-      },
-      {
-        "title": "Bringing it together 3",
-        "description": "Teachers needed a better way to create collaborative group activities by annotating slides on Slice. Before starting this project, a layer could only be annotated by a single user, making it difficult for learners to work together. \n Our solution was to allow users to be invited to a layer, where they can see others’ annotations and make their own.",
-        "imagesLink": [3],
-        "contentPosition": "RIGHT"
-      }
-    ],
-    "features": false,
-    "gallery": [
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/master.jpg",
-        "caption": "Drift bot clone, a live dynamic bot question/answer server."
-      },
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/1.png",
-        "caption": "Drift Bot clone, plugin design for every website."
-      },
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/2.png",
-        "caption": "Drift Bot clone, Ask you customer simple question with dynamic options."
-      },
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/3.png",
-        "caption": "Drift Bot clone, handle dynamic next question, serve for."
-      },
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/4.png",
-        "caption": "Drift Bot clone, supporting video or any third party script."
-      },
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/admin/1.png",
-        "caption": "Drift Bot clone, add endless question, manage its hierarchy."
-      },
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/admin/1.png",
-        "caption": "Drift Bot clone, add endless question, manage its hierarchy."
-      },
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/admin/2.png",
-        "caption": "Drift Bot clone, put your question, and option, each option is attach with next question."
-      },
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/admin/3.png",
-        "caption": "Drift Bot clone, Read recently or all your customer followed steps."
-      },
-      {
-        "image": "/static/portfolio/work/bossvideoplayer/admin/4.png",
-        "caption": "Drift Bot clone, Read simple representation, to read your customer selected option and messages."
-      }
-    ],
-    "technologies": [
-      "jQuery",
-      "Node.js",
-      "Express js",
-      "MongoDB",
-      "Bootstrap admin panel with jQuery"
-    ],
-    "links": [
-      {
-        "title": "Launch web access",
-        "link": "https://bossvideoplayer.com/"
-      },
-      {
-        "title": "Launch an admin panel",
-        "link": "http://81.4.110.105:8442/admin/auth/login"
-      }
-    ],
-    "type": "laptop",
-    "tag_class": ["all_apps", "web_apps"]
   }
 ]

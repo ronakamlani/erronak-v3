@@ -17,7 +17,7 @@ import {
 } from "layouts/Project";
 import { Fragment } from "react";
 import { media } from "utils/style";
-import styles from "./slice/Slice.module.css";
+import styles from "./slug.module.css";
 
 // ✅ Fetch paths for all projects based on slugs in portfolio.json
 export async function getStaticPaths() {
@@ -103,10 +103,11 @@ export const ProjectsDetail = ({ project }) => {
                     </ProjectSectionHeading>
                     <ProjectSectionText
                       dangerouslySetInnerHTML={{ __html: content.description }}
-                    ></ProjectSectionText>
+                    />
                   </div>
                   <div className={styles.sidebarImages}>
                     {content.imagesLink.map((galleryIndex) => {
+                      console.log("galleryIndex>>",galleryIndex);
                       return (
                         <Image
                           className={styles.sidebarImage}
@@ -136,7 +137,7 @@ export const ProjectsDetail = ({ project }) => {
                     </ProjectSectionHeading>
                     <ProjectSectionText
                       dangerouslySetInnerHTML={{ __html: content.description }}
-                    ></ProjectSectionText>
+                    />
                   </ProjectTextRow>
                   {content.imagesLink.map((galleryIndex) => {
                     return (
@@ -202,7 +203,7 @@ export const ProjectsDetail = ({ project }) => {
                     </ProjectSectionHeading>
                     <ProjectSectionText
                       dangerouslySetInnerHTML={{ __html: content.description }}
-                    ></ProjectSectionText>
+                    />
                   </div>
                 </ProjectSectionContent>
               </ProjectSection>

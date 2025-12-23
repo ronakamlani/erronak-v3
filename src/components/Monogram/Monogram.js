@@ -7,7 +7,6 @@ export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => 
   const clipId = `${id}monogram-clip`;
   const maskId = `${id}monogram-mask`;
 
-  console.log("props",JSON.stringify(props));
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"

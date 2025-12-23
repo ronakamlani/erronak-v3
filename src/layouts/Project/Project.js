@@ -34,7 +34,7 @@ export function ProjectHeader({
           <Text
             className={styles.description}
             size="xl"
-            as="p"
+            as="div"
             dangerouslySetInnerHTML={{ __html: description }}
           />
           {!!url && (
@@ -173,7 +173,7 @@ export const ProjectSectionHeading = ({ className, level = 3, as = 'h2', ...rest
 );
 
 export const ProjectSectionText = ({ className, ...rest }) => (
-  <Text className={classes(styles.sectionText, className)} size="l" as="p" {...rest} />
+  <Text className={classes(styles.sectionText, className)} size="l" as="div" {...rest} />
 );
 
 export const ProjectTextRow = ({
