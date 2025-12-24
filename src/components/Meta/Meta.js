@@ -1,18 +1,27 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 const siteUrl = process.env.NEXT_PUBLIC_WEBSITE_URL;
 // Site prefix used in page titles and meta. Include role for stronger SEO.
-const name = 'Ronak Amlani — Senior MERN Stack Engineer';
-const twitterHandle = '@ronakamlani';
+const name = "Ronak Amlani";
+const defaultKeywords =
+  "hire MERN stack developer, freelance full stack developer India, remote React Node expert, scalable web app development, AI integrated MERN solutions";
+const twitterHandle = "@ronakamlani";
 const defaultOgImage = `${siteUrl}/social-image.png`;
 
-export const Meta = ({ title, description, prefix = name, ogImage = defaultOgImage }) => {
-  const titleText = [prefix, title].filter(Boolean).join(' | ');
+export const Meta = ({
+  title,
+  description,
+  keywords = defaultKeywords,
+  prefix = name,
+  ogImage = defaultOgImage,
+}) => {
+  const titleText = [prefix, title].filter(Boolean).join(" | ");
 
   return (
     <Head>
       <title key="title">{titleText}</title>
       <meta key="description" name="description" content={description} />
+      <meta name="keywords" content={keywords} />
       <meta name="author" content={name} />
 
       <meta property="og:image" content={ogImage} />
@@ -33,6 +42,9 @@ export const Meta = ({ title, description, prefix = name, ogImage = defaultOgIma
       <meta name="twitter:site" content={twitterHandle} />
       <meta name="twitter:creator" content={twitterHandle} />
       <meta name="twitter:image" content={ogImage} />
+
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://erronak.com"></link>
     </Head>
   );
 };

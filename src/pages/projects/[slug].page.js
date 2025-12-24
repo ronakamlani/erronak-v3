@@ -61,7 +61,14 @@ export const ProjectsDetail = ({ project }) => {
 
   return (
     <Fragment>
-      <Meta title={title} prefix="Projects" description={description} />
+      <Meta
+        title={title}
+        prefix="Erronak work"
+        description={description}
+        keywords={
+          "MERN stack case study, web development project example, React Node.js scalable app, pricing engine development, full stack developer portfolio"
+        }
+      />
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
           src={project.gallery[0].image}
@@ -107,7 +114,7 @@ export const ProjectsDetail = ({ project }) => {
                   </div>
                   <div className={styles.sidebarImages}>
                     {content.imagesLink.map((galleryIndex) => {
-                      console.log("galleryIndex>>",galleryIndex);
+                      console.log("galleryIndex>>", galleryIndex);
                       return (
                         <Image
                           className={styles.sidebarImage}

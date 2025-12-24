@@ -19,13 +19,18 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/ronak.amlani',
-    icon: 'twitter',
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/in/ronak-amlani-977a1440',
+    icon: 'linkedin',
   },
   {
     label: 'Github',
     url: 'https://github.com/ronakamlani',
     icon: 'github',
   },
+  // {
+  //   label: 'Twitter',
+  //   url: 'https://twitter.com/ronak.amlani',
+  //   icon: 'twitter',
+  // },
 ];

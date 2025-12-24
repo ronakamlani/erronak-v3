@@ -68,8 +68,9 @@ export const Home = ({
   return (
     <div className={styles.home}>
       <Meta
-        title="Senior MERN Stack Engineer + Full-Stack Architect"
-        description="Senior MERN Stack Engineer and Full-Stack Architect with 12+ years building scalable web and SaaS platforms. Expert in React, Node.js, MongoDB, cloud-native architectures, and AI-driven features. I design, architect and ship production-ready solutions across frontend, backend and infrastructure. Available for consulting, architecture, and senior engineering roles."
+        title="Hire Remote MERN Stack Developer India | Scalable Web Apps Built Fast"
+        description="Struggling to find a battle-tested developer who turns chaotic codebases into high-traffic winners? For startups and enterprises drowning in scalability woes, I craft AI-boosted MERN solutions that handle 10x loads without breaking a sweat—drawing from 12+ years optimizing pricing engines at Tesco. Skip the hiring hassle; let's deploy your next app in weeks."
+        keywords="hire MERN stack developer, freelance full stack developer India, remote React Node expert, scalable web app development, AI integrated MERN solutions"
       />
       <Intro
         id="intro"

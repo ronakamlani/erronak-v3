@@ -26,9 +26,9 @@ export async function getStaticProps() {
       return a.index - b.index;
     });
 
-    data.forEach((d)=>{
-      console.log("d>>",d.id,d.description);
-    })
+    data.forEach((d) => {
+      console.log("d>>", d.id, d.description);
+    });
 
     // Make sure description HTML is included in props
     return { props: { portfolioData: data } };
@@ -65,7 +65,13 @@ export function Projects({ portfolioData }) {
 
   return (
     <>
-      <Meta title="Projects - erronak.com" description="" />
+      <Meta
+        title="MERN Stack Projects: Proven Case Studies for Scalable Web Apps"
+        description="Tired of generic portfolios that promise the world but deliver cookie-cutter code? Hiring managers and startup founders, discover real-world MERN projects I've built—like Tesco's high-traffic pricing engine and AI-powered quizzes—that scaled to millions of users without a hitch. Dive into breakdowns showing challenges crushed, tech stacks deployed, and results that drove revenue spikes."
+        keywords={
+          "MERN stack projects, web development case studies, React Node.js portfolio, scalable app examples, software developer projects India"
+        }
+      />
       <Section className={styles.projectMain}>
         <Section className={styles.projectContainer}>
           <Transition unmount in={true} timeout={1600}>

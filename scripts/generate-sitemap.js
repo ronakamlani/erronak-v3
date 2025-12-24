@@ -1,54 +1,80 @@
 const fs = require('fs');
-const { bundleMDX } = require('mdx-bundler');
+const path = require('path');
 
-function addPage(page) {
-  const path = page
-    .replace('src/pages', '')
-    .replace('.page.js', '')
-    .replace('.page.mdx', '')
-    .replace('/index', '/');
-  const route = path === '/index' ? '' : path;
+const BASE_URL = process.env.NEXT_PUBLIC_WEBSITE_URL || 'https://www.erronak.com';
 
-  // Exclude 404 page and generated `[]` pages
-  if (route.includes('[') || route.includes('404')) return;
+/**
+ * Turn a Next.js page path into a proper route
+ */
+function pagePathToRoute(filePath) {
+  let route = filePath
+    .replace('src/pages', '')        // remove pages dir
+    .replace(/\.page\.js$/, '')      // remove .page.js
+    .replace(/\.page\.mdxponders\//g, '/')     // remove .page.mdx
+    .replace(/\/index$/, '/');       // cleanup index routes to /
 
+  // Remove dynamic slug placeholders for sitemap static entries
+  return route;
+}
+
+function addPage(filePath) {
+  const route = pagePathToRoute(filePath);
   return `  <url>
-    <loc>${`${process.env.NEXT_PUBLIC_WEBSITE_URL}${route}`}</loc>
+    <loc>${BASE_URL}${route}</loc>
     <changefreq>monthly</changefreq>
   </url>`;
 }
 
-async function addPost(post) {
-  const source = fs.readFileSync(post, 'utf-8');
-  const { frontmatter } = await bundleMDX({ source });
+function addProjectUrls() {
+  const portfolioPath = path.join(process.cwd(), 'src', 'data', 'portfolio.json');
+  if (!fs.existsSync(portfolioPath)) return '';
 
-  if (process.env.NODE_ENV === 'production' && frontmatter.draft) return;
+  const rawData = fs.readFileSync(portfolioPath, 'utf-8');
+  const projects = JSON.parse(rawData);
 
-  const path = post.replace('src/posts', '/articles').replace('.mdx', '');
+  return projects.map(proj => {
+    const slug = proj.slug.startsWith('/') ? proj.slug : `/${proj.slug}`;
+    return `  <url>
+    <loc>${BASE_URL}${slug}</loc>
+    <changefreq>monthly</changefreq>
+  </url>`;
+  }).join('\n');
+}
 
+function addPost(filePath) {
+  const slug = filePath
+    .replace('src/posts/', '')
+    .replace(/\.mdx?$/, '');
   return `  <url>
-    <loc>${`${process.env.NEXT_PUBLIC_WEBSITE_URL}${path}`}</loc>
+    <loc>${BASE_URL}/articles/${slug}</loc>
     <changefreq>monthly</changefreq>
   </url>`;
 }
 
 async function generateSitemap() {
   const { globby } = await import('globby');
-  // Ignore Next.js specific files (e.g., _app.js) and API routes.
-  const pages = await globby([
+
+  // Static pages (excluding custom _app/_document/api)
+  const pagePaths = await globby([
     'src/pages/**/*{.page.js,.page.mdx}',
     '!src/pages/_*.js',
     '!src/pages/api',
-  ]);
-  const postUrls = await globby(['src/posts/**/*.mdx']);
-  const posts = await Promise.all(postUrls.map(addPost));
+    '!src/pages/projects/[slug].page.js',  // 🚫 ignore dynamic template
 
+  ]);
+
+  // Blog posts (MDX)
+  const postPaths = await globby(['src/posts/**/*.mdx']);
+
+  // Compose XML
   const sitemap = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${pages.map(addPage).filter(Boolean).join('\n')}
-${posts.filter(Boolean).join('\n')}
-</urlset>\n`;
+${pagePaths.map(addPage).join('\n')}
+${addProjectUrls()}
+${postPaths.map(addPost).join('\n')}
+</urlset>`;
 
   fs.writeFileSync('public/sitemap.xml', sitemap);
+  console.log(`✅ Sitemap generated with ${pagePaths.length} pages, ${postPaths.length} posts, and project URLs from portfolio.json`);
 }
 
 generateSitemap();
